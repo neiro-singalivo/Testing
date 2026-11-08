@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacts</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="External.css" />
+    <style>
+      .contact-title {
+        flex: 0 0 100%;
+        text-align: center;
+        margin: 0;
+      }
+
+      .Contactlinks {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        align-items: center;
+        flex: 0 0 100%;
+        margin-top: 0;
+      }
+
+      .Contactlinks a {
+        display: inline-flex;
+        align-items: center;
+        justify-self: center;
+        color: dodgerblue;
+        font-weight: 600;
+        font-size: 1.3rem;
+        text-decoration: none;
+        gap: 8px;
+        transition: 0.2s;
+      }
+
+      .Contactlinks a:hover {
+        text-decoration: underline;
+        color: #0b2545;
+        transform: translateY(-3px);
+      }
+
+      .Contactlinks i {
+        font-size: 1.6rem;
+        margin-right: 8px;
+        width: 1.6rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1
+        style="
+          color: white;
+          text-align: left;
+          margin-left: 100px;
+          font-size: 42px;
+          font-family: &quot;Smooch Sans&quot;, Arial, sans-serif;
+        "
+      >
+        Neiro Jacob C. Singalivo
+      </h1>
+
+      <nav>
+        <a href="AboutMe.html">About Me</a>
+        <a href="Skill.html">Skills</a>
+        <a href="Contactcard.html" class="active">Contact Details</a>
+      </nav>
+    </header>
+    <section class="profile">
+      <h2 class="contact-title">Contact Me</h2>
+      <div class="Contactlinks">
+        <a href="https://www.facebook.com/neiro.singalivo.1" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+          <span>Facebook</span>
+        </a>
+        <a href="mailto:ncsingalivo@student.apc.edu.ph" target="_blank">
+          <i class="fa-regular fa-envelope"></i>
+          <span>Outlook</span>
+        </a>
+        <a href="https://github.com/neiro-singalivo" target="_blank">
+          <i class="fa-brands fa-github"></i>
+          <span>Github</span>
+        </a>
+      </div>
+      <div class="Contactlinks">
+        <a
+          href="https://www.linkedin.com/in/neiro-singalivo-686011381/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+
+        <a href="tel:+639937114592">
+          <i class="fa-solid fa-phone"></i>
+          <span>+639937114592</span>
+        </a>
+        <a href="https://discord.com/users/750104490186899468" target="_blank">
+          <i class="fa-brands fa-discord"></i>
+          <span>Discord</span>
+        </a>
+      </div>
+    </section>
+    <button
+      class="btn"
+      style="margin-left: 120px"
+      onclick="location.href = 'Skill.html'"
+    >
+      <- Previous Page
+    </button>
+  </body>
+</html>
